@@ -24,8 +24,12 @@ namespace TranThanhSolution5
             Mapper.Initialize(cfg =>
             {
                 cfg.CreateMap<CreateStudentView, Student>();
-                cfg.CreateMap<EditStudentView, Student>();
-                cfg.CreateMap<Student, StudentListItemView>();
+                cfg.CreateMap<EditStudentView, Student>()
+                .ForMember(destinationMember => destinationMember.Uuid, opt => opt.Ignore() )
+                .ForSourceMember(sourceMember=>sourceMember.UpdateAt, opt => opt.Ignore()) ;
+
+                cfg.CreateMap<Student, StudentListItemView>()
+                .ForMember(dest => dest.Age , o => o.MapFrom(s => s.Birthday != null ? DateTime.Today.Year- s.Birthday.Year : 0));
             });
         }
     }

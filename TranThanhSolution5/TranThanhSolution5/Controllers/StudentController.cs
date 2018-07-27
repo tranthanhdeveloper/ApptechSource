@@ -12,7 +12,7 @@ namespace TranThanhSolution5.Controllers
     public class StudentController : Controller
     {
         private const string NO_STUDENT_FOUND_MSG = "There is't any student found";
-        private const string LOAD_STUDENT_LIST_ERROR = "There is't any student found";
+        private const string LOAD_STUDENT_LIST_ERROR = "Something wrong! Can not load student";
 
         // GET: Student
         public ActionResult Index()
