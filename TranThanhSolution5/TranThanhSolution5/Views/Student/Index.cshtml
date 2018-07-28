@@ -32,7 +32,7 @@
                         @Html.DisplayNameFor(model => model.Birthday)
                     </th>
                     <th>
-                        @Html.DisplayNameFor(model => model.Age)
+                        @Html.Display("Age")
                     </th>
                     <th></th>
                 </tr>
@@ -57,7 +57,7 @@
                         @Html.DisplayFor(modelItem => item.Birthday)
                     </td>
                     <td>                        
-                        @Html.DisplayFor(modelItem => item.Age)
+                        @Html.DisplayFor(modelItem => item.GetAge)
                     </td>
                     <td>
                         @Html.ActionLink("Edit", "Edit", new { id = item.Uuid }) |

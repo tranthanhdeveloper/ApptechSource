@@ -185,7 +185,6 @@ E:\ApptechSource\TranThanhSolution5\TranThanhSolution5\bin\Microsoft.AI.Dependen
 E:\ApptechSource\TranThanhSolution5\TranThanhSolution5\bin\Microsoft.AI.WindowsServer.xml
 E:\ApptechSource\TranThanhSolution5\TranThanhSolution5\bin\Microsoft.AI.Web.xml
 E:\ApptechSource\TranThanhSolution5\TranThanhSolution5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\ApptechSource\TranThanhSolution5\TranThanhSolution5\obj\Debug\TranThanhSolution5.csprojAssemblyReference.cache
 E:\ApptechSource\TranThanhSolution5\TranThanhSolution5\obj\Debug\TranThanhSolution5.csproj.CoreCompileInputs.cache
 E:\ApptechSource\TranThanhSolution5\TranThanhSolution5\obj\Debug\TranThanhSolution5.csproj.CopyComplete
 E:\ApptechSource\TranThanhSolution5\TranThanhSolution5\obj\Debug\TranThanhSolution5.dll

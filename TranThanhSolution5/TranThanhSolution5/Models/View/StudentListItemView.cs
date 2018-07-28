@@ -18,6 +18,14 @@ namespace TranThanhSolution5.Models.View
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}")]
         public DateTime Birthday { get; set; }
-        public int Age { get; set; }
+
+        public int GetAge
+        {
+            get
+            {
+                return (int)(((DateTime.Now - Birthday).Days) / 365.25);
+            }
+            
+        }
     }
 }

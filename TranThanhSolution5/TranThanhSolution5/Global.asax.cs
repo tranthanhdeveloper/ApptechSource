@@ -28,8 +28,7 @@ namespace TranThanhSolution5
                 .ForMember(destinationMember => destinationMember.Uuid, opt => opt.Ignore() )
                 .ForSourceMember(sourceMember=>sourceMember.UpdateAt, opt => opt.Ignore()) ;
 
-                cfg.CreateMap<Student, StudentListItemView>()
-                .ForMember(dest => dest.Age , o => o.MapFrom(s => s.Birthday != null ? DateTime.Today.Year- s.Birthday.Year : 0));
+                cfg.CreateMap<Student, StudentListItemView>();
             });
         }
     }
